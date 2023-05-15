@@ -4,4 +4,4 @@ setTimeout(setInterval(function () {
 
     timestamp.innerText = timeNow;
 
-}, 1000), 2000);
+}, 1000), 5000);
