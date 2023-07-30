@@ -163,3 +163,12 @@ html, body {
     font-size: 1em;
     color: ghostwhite;
 }
+
+#intro {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2147483647;
+} 
