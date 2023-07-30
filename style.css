@@ -8,22 +8,159 @@
     src: url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"), url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"), url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
 }
 
-body {
+html, body {
+    font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
-
-}
-
-.container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    background-color: black;
+
+    
     text-align: center;
     min-height: 100vh;
+    width: 56.25vh; /*9:16 ratio (100vh * 9/16) */
+    max-width: 100vw;
+
+}
+
+.container-head {
+    background-color: black;
+    width: 100%;
+    min-height: 10vh;
+    height: calc(100vh - 100vw * 16/9);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-main {
+    background-image: url("img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    width: 100%;
+    max-height: 90vh; /*100vw  * 16/9*/
+    height: calc(min(100vw,56.25vh) * 16/9);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.c-main-navbar {
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255,5,255,0);
+    font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 1.4em;
+    color: rgba(0,0,0,0.5);
+}
+
+.navbar-item {
+    width: 97%;
+
+    background-color: rgba(0,0,0,0);
+    border-bottom: 5px dashed rgba(0,0,0,0.4);
+
+    writing-mode: vertical-lr;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .navbar-item > a {
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        color: rgba(0,0,0,0.4);
+        text-decoration: underline overline;
+    }
+
+.navbar-item-selected > a {
+    font-size: 2em;
+    color: rgba(0,0,0,0.95);
+    text-decoration: none;
+}
+
+
+.c-main-container {
+    font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 83.5%; /*100% - 16.5%*/
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+    .c-main-container > div > p {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 0.5em;
+
+        color: rgba(0,0,0,0.7);
+        font-size: 1em;
+        text-align: justify;
+        text-indent: 2em;
+    }
+
+    .c-main-container > div > p:first-child {
+        padding-top: 5%;
+        font-size: 1.2em;
+        color: rgba(0,0,0,0.9);
+    }
+
+    .c-main-container > div > p:last-child {
+        padding-bottom: 5%;
+    }
+
+.container-empty-block {
+    width: 100%;
+    background-color: red;
+}
+
+.container-block {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+    .container-block > ul {
+        padding-left: 10%;
+        padding-bottom: 0.3em;
+        text-align: left;
+        list-style-position: inside;
+        columns: 2;
+        color: rgba(0,0,0,0.7);
+    }
+
+.social-links {
+    width: 100%;
+    height: 2em;
+}
+
+    .social-links > a {
+        font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+#pagetitle {
+    font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: ghostwhite;
 }
 
 #timestamp {
     font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1em;
     color: ghostwhite;
 }
