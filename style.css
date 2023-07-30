@@ -134,6 +134,7 @@ html, body {
 
 .container-block {
     background-color: rgba(255, 255, 255, 0.8);
+    padding: 5%;
 }
 
     .container-block > h2 {
@@ -157,6 +158,19 @@ html, body {
         columns: 2;
         color: rgba(0,0,0,0.7);
     }
+
+.item-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.item-block > h3 {
+    text-align: left;
+}
 
 .social-links {
     width: 100%;
