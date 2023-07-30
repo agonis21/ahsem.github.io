@@ -36,6 +36,11 @@ html, body {
     justify-content: center;
 }
 
+#pagetitle > a {
+    color: white;
+    text-decoration: none;
+}
+
 .container-main {
     background-image: url("img/bg.jpg");
     background-position: center;
