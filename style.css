@@ -80,6 +80,8 @@ html, body {
     }
 
 .navbar-item-selected > a {
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-size: 2em;
     color: rgba(0,0,0,0.95);
     text-decoration: none;
@@ -104,14 +106,14 @@ html, body {
         padding-bottom: 0.5em;
 
         color: rgba(0,0,0,0.7);
-        font-size: 1em;
+        font-size: 0.8em;
         text-align: justify;
         text-indent: 2em;
     }
 
     .c-main-container > div > p:first-child {
         padding-top: 5%;
-        font-size: 1.2em;
+        font-size: 1em;
         color: rgba(0,0,0,0.9);
     }
 
@@ -131,6 +133,8 @@ html, body {
     .container-block > ul {
         padding-left: 10%;
         padding-bottom: 0.3em;
+
+        font-size: 0.8em;
         text-align: left;
         list-style-position: inside;
         columns: 2;
