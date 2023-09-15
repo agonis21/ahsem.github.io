@@ -7,8 +7,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile Page </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="stylesheets/web_style.css">
+    <link rel="stylesheet" media="handheld" href="stylesheets/mobile_style.css">
 
+    <!-- STYLE TAG IN HEAD-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    
+        * {
+            font-family: 'Open Sans', monospace;
+            font-weight: 400;  
+        }
+
+        div {
+            backface-visibility: inherit;
+        }
+
+        h1 {
+            font-weight: 800;
+            text-align: center;
+        }
+
+        img {
+            opacity: 90%;
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+        ul, li {
+            list-style-type: circle;
+        }
+
+        span:hover {
+            font-style: oblique;
+        }
+
+        a {
+            color: black;
+            padding: 2px;
+        }
+
+        a:visited {
+            color: gray;
+        }
+      
+        a:hover {
+            background-color: cadetblue;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        img:hover {
+           border: 2px solid black;
+        }
+
+        form {
+            font-style: italic;
+            text-align: center;
+        }
+
+            form > hr {
+                border: 0px dashed gray;
+                margin-right: 0;
+                margin-left: 50%;
+            }
+
+            form > input {
+                width: 100%;
+            }
+        
+
+    </style>
 </head>
 <body>
 <div class="container">
@@ -24,7 +95,7 @@
     <div class="section">
         <h1 class="section-title">About</h1>
         <p>Call me <span id="ahsem-name">Ahsem.</span> I am a CS major on my final year of college (hopefully).</p>
-        <img id="pfp" src="pfp.png">
+        <img id="pfp" src="resources/pfp.png">
     </div>
     <hr>
     <div class="section">
@@ -67,15 +138,15 @@
                 <th>Favorite TV Show</th>
             </tr>
             <tr>
-                <td><video width="320" height="240" controls>
-    <source src="carti.mp4" type="video/mp4">
+                <td><video controls>
+    <source src="videos/carti.mp4" type="video/mp4">
 </video></td>
-                <td><video width="320" height="240" controls>
-    <source src="darkknight.mp4" type="video/mp4">
+                <td><video controls>
+    <source src="videos/darkknight.mp4" type="video/mp4">
 </video></td>
                 <td>
-                    <video width="320" height="240" controls>
-                        <source src="theflash.mp4" type="video/mp4">
+                    <video controls>
+                        <source src="videos/theflash.mp4" type="video/mp4">
                     </video>
                 </td>
             </tr>
@@ -105,16 +176,19 @@
     <hr>
     <div class="section">
         <h1>Contact Form</h1>
-        <form>
+        <form id="contact">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name">
+            <hr />
             <label for="phone">Phone Number:</label>
             <input type="text" id="phone" name="phone">
+            <hr />
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
+            <hr />
             <label for="topic">What are you contacting about?</label>
-            <input type="text" id="topic" name="topic">
-
+            <input type="text" style="height: 150px;" id="topic" name="topic">
+            <hr />
             <input type="submit" value="Submit">
         </form>
     </div>
