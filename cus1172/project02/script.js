@@ -115,7 +115,8 @@ function createTaskHTML(task_created_date, task_title, task_priority, task_statu
 let TASKS = [
     ["10-12", "Click done.", "MED", "Current"],
     ["10-12", "Click delete.", "LOW", "Current"],
-    ["10-12", "Do the laundry.", "HIGH", "Current"]
+    ["10-12", "Complete Project 02 for CUS1172.", "HIGH", "Current"]
+
 ];
 
 let COMPLETED_TASKS = [
@@ -138,6 +139,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     for (let k = 0; k < TASKS.length; k++) {
         createTaskHTML(...TASKS[k]);
     }
+
+
 
     let new_task_submit_btn = document.querySelector("#new_task_submit");
     new_task_submit_btn.onclick = function () {
