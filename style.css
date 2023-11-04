@@ -5,24 +5,32 @@
 
 html, body {
     font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: black;
+
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-.container {
+body {
+    background-size: 10% auto;
+    background-repeat: repeat;
+/*    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), 
+        rgba(255, 255, 255, 0.9)), 
+        url("img/bg-duplicate-flipped.png");*/
     background-color: black;
+}
 
-    
+.container {
+    background-image: url("img/bg-duplicate-flipped.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat;
+
     text-align: center;
     min-height: 100vh;
     width: 56.25vh; /*9:16 ratio (100vh * 9/16) */
     max-width: 100vw;
-
-    
-
 }
 
 .container-head {
@@ -42,18 +50,20 @@ html, body {
 }
 
 .container-main {
-    background-image: url("img/bg.jpg");
+    /*background-image: url("img/bg.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;*/
 
 
     width: 100%;
-    max-height: 90vh; /*100vw  * 16/9*/
+    max-height: 100vh; /*100vw  * 16/9*/
     height: calc(min(100vw,56.25vh) * 16/9);
 
     display: flex;
     flex-direction: row;
+
+
 }
 
 .c-main-navbar {
@@ -99,7 +109,7 @@ html, body {
 .c-main-container {
     font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 83.5%; /*100% - 16.5%*/
-    height: 100%;
+    height: 100vh;
     background-color: rgba(255,255,255,0);
 
     display: flex;
@@ -135,6 +145,7 @@ html, body {
     width: 50px;
     height: 20px;
     background-color: red;
+    content: '?';
 }
 
 .container-block {
@@ -143,6 +154,13 @@ html, body {
 
     .container-block > h2 {
         padding-top: 5%;
+    }
+
+    .container-block > h4 {
+        font-weight: 400;
+        padding: 25px;
+        text-align: left;
+        text-justify: inter-character;
     }
 
     .container-block > img {
@@ -173,6 +191,7 @@ html, body {
 }
 
 .item-block > h3 {
+    font-size: 1em;
     text-align: left;
 }
 
@@ -201,13 +220,41 @@ html, body {
 
 #timestamp {
     font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1em;
-    color: ghostwhite;
+    color: rgba(0,0,0,0.9);
+    padding: 10px;
+    overflow: hidden;
 }
 
 #intro {
     z-index: 1000;
     width: 56.25vh;
     height: 100vh;
-} 
+}
+
+
+
+.container-block > h3 > a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.container-block > h4 > a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+    .container-block > h3 > a:after {
+        content: '';
+    }
+
+.footer > h4 {
+    text-align: center;
+}
+
