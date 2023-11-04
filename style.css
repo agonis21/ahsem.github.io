@@ -90,8 +90,8 @@ body {
 }
 
     .navbar-item > a {
-        padding-top: 2em;
-        padding-bottom: 2em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
 
         color: rgba(0,0,0,0.4);
         text-decoration: underline overline;
@@ -225,6 +225,7 @@ body {
     color: rgba(0,0,0,0.9);
     padding: 10px;
     overflow: hidden;
+
 }
 
 #intro {
@@ -233,7 +234,10 @@ body {
     height: 100vh;
 }
 
-
+/*
+.container-block:nth-child(1) {
+    position: absolute;
+}*/
 
 .container-block > h3 > a {
     text-decoration: none;
