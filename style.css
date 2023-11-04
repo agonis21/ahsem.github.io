@@ -30,7 +30,9 @@ body {
     background-position: top;
     background-size: 5% auto;
     background-repeat: repeat;
+
 }
+
 
 .container {
     background-image: url("img/bg-duplicate-flipped.png");
@@ -195,6 +197,24 @@ body {
         color: rgba(0,0,0,0.7);
     }
 
+    .container-block > h3 > a {
+        text-decoration: none;
+        color: black;
+        border-bottom: 1px solid black;
+    }
+
+    .container-block > h4 > a {
+        text-decoration: none;
+        color: black;
+        border-bottom: 1px solid black;
+    }
+
+
+    .container-block > h3 > a:after {
+        content: '';
+    }
+
+
 .item-block {
     display: flex;
     flex-direction: row;
@@ -253,24 +273,7 @@ body {
     position: absolute;
 }*/
 
-.container-block > h3 > a {
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px solid black;
-}
 
-.container-block > h4 > a {
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px solid black;
-}
-
-
-
-
-    .container-block > h3 > a:after {
-        content: '';
-    }
 
 .footer > h4 {
     text-align: center;
