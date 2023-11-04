@@ -5,11 +5,19 @@
 
 html, body {
     font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: black;
+
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+body {
+    background-size: 10% auto;
+    background-repeat: repeat;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), 
+        rgba(255, 255, 255, 0.9)), 
+        url("img/bg-duplicate-flipped.png");
 }
 
 .container {
