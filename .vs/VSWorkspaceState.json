@@ -2,18 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\cus1172",
-<<<<<<< HEAD
+    "\\cus1172\\project02",
     "\\cus1172\\resources",
     "\\cus1172\\stylesheets",
     "\\GIFs"
   ],
-  "SelectedNode": "\\GIFs\\impala_def.gif",
-=======
-    "\\cus1172\\todo-application",
-    "\\img",
-    "\\vid"
-  ],
-  "SelectedNode": "\\cus1172\\todo-application\\script.js",
->>>>>>> f5581b790be29cef74e94ed643096caad91d0ee7
   "PreviewInSolutionExplorer": false
 }
