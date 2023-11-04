@@ -16,6 +16,7 @@ if (current_page_link == "") {
 for (var i = 0; i < links.length; i++) {
     let navbar_item = document.createElement("div");
     navbar_item.classList.add("navbar-item");
+    //navbar_item.onclick = "location.href='" + links[i][1] + "';"
 
     let navbar_a = document.createElement("a");
     navbar_a.innerText = links[i][0];

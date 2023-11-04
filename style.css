@@ -194,6 +194,10 @@ body {
         filter: drop-shadow(0 0 0.5rem black);
     }
 
+    .container-block > img:hover {
+        filter: drop-shadow(0 0 0.7rem black);
+    }
+
     .container-block > ul {
         padding-left: 10%;
         padding-bottom: 0.3em;
