@@ -1,0 +1,22 @@
+.container-block > img {
+    margin: 0.5em;
+}
+
+.container-block > .language-tags {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.language-tags > span {
+    font-size: 0.8em;
+    padding: 2px 10px;
+    border-radius: 50px;
+    color: rgba(0,0,0,0.95);
+    background: rgba(0,0,0,0.1);
+    border: 1px dotted black;
+}
+
+.language-tags > span:hover {
+    background: rgba(0,0,0,1);
+    color: white;
+}
