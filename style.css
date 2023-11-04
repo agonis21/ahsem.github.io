@@ -105,10 +105,13 @@ body {
     justify-content: center;
 }
 
+    .navbar-item:hover{
+        background-color: rgba(255,255,255,0.5);
+    }
+
     .navbar-item > a {
         padding-top: 1.5em;
         padding-bottom: 1.5em;
-
         color: rgba(0,0,0,0.4);
         text-decoration: underline overline;
     }
@@ -168,8 +171,13 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.container-block:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
     .container-block > h2 {
         padding-top: 5%;
+
     }
 
     .container-block > h4 {
@@ -212,6 +220,12 @@ body {
 
     .container-block > h3 > a:after {
         content: '';
+    }
+
+    .container-block > h3 > a:hover {
+        padding: 3px;
+        background: black;
+        color: white;
     }
 
 
