@@ -1,0 +1,39 @@
+
+#pfp {
+    width: 200px;
+    height: 200px;
+}
+
+#ahsem-name {
+    font-weight: 600;
+}
+
+/*.section, hr {
+    margin-right: 20vw;
+    margin-left: 20vw;
+}
+*/
+.section {
+    padding: 1em;
+}
+
+.section:hover {
+    background-color: beige;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+table > tr {
+    width: 10%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
