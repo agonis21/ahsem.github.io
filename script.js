@@ -2,7 +2,7 @@ setTimeout(setInterval(function () {
     var timeNow = new Date().toLocaleString();
     var timestamp = document.getElementById("timestamp");
 
-    timestamp.innerText = window.location.href.slice(7) + " + " + timeNow;
+    timestamp.innerHTML = "<a style=\"color:black; text-decoration: none;\" href=\"blank.html\">ahsem.nyc</a> &copy; " + timeNow;
 
 }, 1000), 50000);
 
