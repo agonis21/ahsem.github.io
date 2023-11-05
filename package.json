@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "nodescript.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "start": "nodemon mainapp.js"
+    "start": "node mainapp.js"
   },
   "author": "",
   "license": "ISC",
