@@ -1,0 +1,14 @@
+{
+  "name": "node-ahsemnyc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodescript.js",
+  "scripts": {
+    "start": "node nodescript.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
