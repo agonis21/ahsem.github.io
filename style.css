@@ -141,16 +141,15 @@ body {
 
     .c-main-container > div > p {
         padding: 0em 1em;
-
         color: rgba(0,0,0,0.7);
-        font-size: 0.9em;
+        font-size: 0.8em;
         text-align: justify;
         text-indent: 2em;
     }
 
     .c-main-container > div > p:first-child {
         padding-top: 5%;
-        font-size: 0.9em;
+        font-size: 0.8em;
         color: rgba(0,0,0,0.9);
     }
 
@@ -180,7 +179,7 @@ body {
 
     .container-block > h4 {
         font-weight: 400;
-        padding: 10px;
+        padding: 1em;
         text-align: left;
         text-justify: inter-character;
     }
