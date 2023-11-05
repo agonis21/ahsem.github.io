@@ -72,6 +72,9 @@ function createTaskHTML(task_created_date, task_title, task_priority, task_statu
         complete_btn.disabled = true;
         delete_btn.disabled = true;
 
+        //changing task status
+        t_row.childNodes[3].querySelector("button").innerText = "Deleted";
+
         deleted_task_section.appendChild(t_row);
         console.log(deleted_task_section);
         //t_row.remove();
@@ -95,6 +98,9 @@ function createTaskHTML(task_created_date, task_title, task_priority, task_statu
 
         complete_btn.disabled = true;
         delete_btn.disabled = true;
+
+        //changing task status
+        t_row.childNodes[3].querySelector("button").innerText = "Completed";
 
         completed_task_section.appendChild(t_row);
         console.log(completed_task_section);
