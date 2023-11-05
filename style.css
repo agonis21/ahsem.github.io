@@ -140,19 +140,17 @@ body {
 
 
     .c-main-container > div > p {
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 0.5em;
+        padding: 0em 1em;
 
         color: rgba(0,0,0,0.7);
-        font-size: 0.8em;
+        font-size: 0.9em;
         text-align: justify;
         text-indent: 2em;
     }
 
     .c-main-container > div > p:first-child {
         padding-top: 5%;
-        font-size: 1em;
+        font-size: 0.9em;
         color: rgba(0,0,0,0.9);
     }
 
@@ -182,7 +180,7 @@ body {
 
     .container-block > h4 {
         font-weight: 400;
-        padding: 25px;
+        padding: 10px;
         text-align: left;
         text-justify: inter-character;
     }
@@ -273,7 +271,7 @@ body {
 #timestamp {
     font-family: 'Noto Sans Bengali', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.8em;
     color: rgba(0,0,0,0.9);
     padding: 10px;
     overflow: hidden;
