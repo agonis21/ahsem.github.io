@@ -23,7 +23,7 @@ body {
             rgba(0, 0, 0, 0.9), 
             rgba(0, 0, 0, 0.9)
         ),
-        url("img/elektron_logo_white.png"),
+        url("img/elektron_logo_white.webp"),
         linear-gradient(
             to top, 
             rgba(0, 0, 0, 0.95), 
@@ -37,7 +37,7 @@ body {
 
 
 .container {
-    background-image: url("img/bg-duplicate-flipped.png");
+    background-image: url("img/bg-duplicate-flipped.webp");
     background-position: top;
     background-size: cover;
     background-repeat: repeat;
