@@ -298,3 +298,24 @@ body {
     background-color: rgba(0,0,0,0) !important;
     min-height: 100vh !important;
 }
+
+.container-app {
+    padding: 5px;
+}
+    .container-app > h1 {
+        font-size: 1.3em;
+    }
+
+    .container-app > p {
+        /*padding: 0em 1em;*/
+        margin-right: 6%;
+        margin-left: 6%;
+        color: rgba(0,0,0,0.7);
+        font-size: 0.8em;
+        text-align: justify;
+        text-indent: 2em;
+    }
+
+    .container-app > img {
+        width: 80%;
+    }
