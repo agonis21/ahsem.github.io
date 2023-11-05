@@ -2,17 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\cus1172",
-<<<<<<< HEAD
-    "\\img",
-    "\\vid"
-  ],
-  "SelectedNode": "\\cus1172\\videos",
-=======
     "\\cus1172\\project02",
     "\\cus1172\\resources",
     "\\cus1172\\stylesheets",
-    "\\GIFs"
+    "\\img",
+    "\\resources"
   ],
->>>>>>> 9aa217d777207728158c104dc7b82e4806d459c9
   "PreviewInSolutionExplorer": false
 }
