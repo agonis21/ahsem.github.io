@@ -128,15 +128,13 @@ body {
 
 
 .c-main-container {
-    font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Noto Sans Bengali', 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 83.5%; /*100% - 16.5%*/
     height: 100vh;
     background-color: rgba(255,255,255,0);
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     overflow-y: auto;
 }
 
