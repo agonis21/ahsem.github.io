@@ -230,6 +230,15 @@ body {
         color: white;
     }
 
+    .container-block > p {
+        margin-right: 6%;
+        margin-left: 6%;
+        color: rgba(0,0,0,0.7);
+        font-size: 0.8em;
+        text-align: justify;
+        text-indent: 2em;
+    }
+
 
 .item-block {
     display: flex;
