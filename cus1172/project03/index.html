@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bengali Trivia</title>
+
+    <meta http-equiv="refresh" content="5">
+
+
+    <link href="https://unpkg.com/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mx-auto">
+        <div class="navbar bg-base-200 mb-5 shadow-xl rounded-box">
+            <div class="navbar-start">
+                <a class="btn btn-ghost normal-case text-xl">ahsem.nyc</a>
+                <!--<div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
+                    </svg>
+                </label>
+                <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                    <li><a>Ahsem</a></li>
+                    <li><a>Apps</a></li>
+                    <li><a>Edits</a></li>
+                    <li><a>Shop</a></li>
+                </ul>
+            </div>-->
+            </div>
+            <div class="navbar-center">
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <a href="https://ahsem.nyc"><img class="w-12 h-12" src="elektron_logo.svg" /></a>
+                    </div>
+                </button>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-ghost normal-case text-xl">Bengali Trivia</a>
+            </div>
+        </div>
+
+        <div class="hero mb-5 bg-base-200 shadow-xl rounded-box">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-4xl font-bold">How Bengali are you?</h1>
+                    <p class="py-6">Take this 9 question quiz to find out! First, tell us your name.</p>
+
+                    <div class="card mx-auto mb-5 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Name</span>
+                                </label>
+                                <input type="text" placeholder="Asm Goni" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary">BEGIN QUIZ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero mb-5 bg-base-200  shadow-xl rounded-box">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h3 class="text-2xl font-bold">When did Bangladesh gain independence?</h3>
+
+                    <div class="form-control">
+                        <label class="label cursor-pointer">
+                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                            <span class="label-text">1948</span>
+                        </label>
+                    </div>
+                    <div class="form-control">
+                        <label class="label cursor-pointer">
+                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                            <span class="label-text">1971</span>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero mb-5 bg-base-200  shadow-xl rounded-box">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h3 class="text-2xl font-bold">When country surrounds Bangladesh?</h3>
+
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Answer</span>
+                        </label>
+                        <input type="text" placeholder="Type your answer" class="input input-bordered" required />
+                    </div>
+
+                    <button class="btn btn-primary">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
