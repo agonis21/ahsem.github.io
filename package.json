@@ -4,11 +4,13 @@
   "description": "",
   "main": "nodescript.js",
   "scripts": {
-    "start": "node nodescript.js"
+    "start": "node mainapp.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7",
     "react": "^18.2.0"
   }
 }
