@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -271,13 +273,12 @@ body {
 }
 
 #timestamp {
-    font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Noto Sans Bengali', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     font-size: 1em;
     color: rgba(0,0,0,0.9);
     padding: 10px;
     overflow: hidden;
-
 }
 
 #intro {
