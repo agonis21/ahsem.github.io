@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\cus1172\\project02",
-    "\\cus1172\\resources",
-    "\\cus1172\\stylesheets"
+    "\\cus1172",
+    "\\cus1172\\project03",
+    "\\cus1172\\project03\\daisyui"
   ],
-  "SelectedNode": "\\apps_style.css",
+  "SelectedNode": "\\cus1172\\project03\\daisyui\\daisyui-3.3.5.js",
   "PreviewInSolutionExplorer": false
 }
