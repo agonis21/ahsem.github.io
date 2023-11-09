@@ -607,7 +607,7 @@ function nextQuestion(){
     //removes content from div#questionResultRender
     document.querySelector("div#questionResultRender").innerHTML = "";
 
-    if (USER_CURR_QUESTION <= USER_TOTAL_QUESTIONS) {
+    if (USER_CURR_QUESTION < USER_TOTAL_QUESTIONS) {
         USER_CURR_QUESTION += 1;
     }
 

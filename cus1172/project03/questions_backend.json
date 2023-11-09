@@ -1,0 +1,33 @@
+[
+    {
+        "questionTitle": "What is the MERN stack?",
+        "isMultipleChoice": true,
+        "isMultipleImageChoice": false,
+        "isShortResponse": false,
+        "multipleChoiceOptions": [
+            {
+                "option": "MongoDB, Express.js, React, Node.js"
+            },
+            {
+                "option": "Money, Elephant, Radio, North"
+            }
+        ],
+        "correctMultipleChoiceOption": "MongoDB, Express.js, React, Node.js",
+        "multipleImageChoiceURLOptions": [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }
+        ],
+        "correctMultipleImageChoiceURLOption": "",
+        "correctShortResponseAnswer": ""
+    }
+]
