@@ -2,7 +2,10 @@
   "name": "node-ahsemnyc",
   "version": "1.0.0",
   "description": "",
-  "main": "nodescript.js",
+  "main": "mainapp.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node mainapp.js"
   },
