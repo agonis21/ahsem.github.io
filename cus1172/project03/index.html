@@ -111,7 +111,7 @@
                         {{#each multipleChoiceOptions}}
                             <div class="form-control">
                                 <label class="label cursor-pointer">
-                                    <input type="radio" name="radio-10" class="radio checked:bg-red-500 mr-5" checked />
+                                    <input type="radio" name="question" class="radio checked:bg-red-500 mr-5" checked />
                                     <span class="label-text text-xl">{{option}}</span> 
                                 </label>
                             </div>
@@ -123,21 +123,21 @@
                     {{#if isMultipleImageChoice}}
                         {{#each multipleImageChoiceURLOptions}}
                         
-                        <div class="form-control">
-                            <label class="label cursor-pointer">
-                                <input type="radio" name="radio-10" class="radio checked:bg-red-500 mr-5" checked />
-                                <div class="avatar">
-                                    <div class="w-24 rounded">
-                                      <img src="{{option}}" />
+                            <div class="form-control">
+                                <label class="label cursor-pointer">
+                                    <input type="radio" name="question" class="radio checked:bg-red-500 mr-5" checked />
+                                    <div class="avatar">
+                                        <div class="w-24 rounded">
+                                        <img src="{{option}}" />
+                                        </div>
                                     </div>
-                                  </div>
-                            </label>
-                        </div>
+                                </label>
+                            </div>
                         {{/each}}
                     {{/if}}
 
                     {{#if isShortResponse}}
-                        <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" />
+                        <input id="userGivenShortResponse" type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" />
 
                     {{/if}}
 
