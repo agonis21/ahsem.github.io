@@ -57,7 +57,7 @@ function beginQuiz(){
 async function getRandomQuestion(){
     //questionType is either frontend or backend
 
-    let mainURL = "http://localhost:3000/";
+    let mainURL = "https://cs-quiz-rn4jaxlc9-agonis21.vercel.app/";
 
     if (QUIZ_NAME == "Front-end Quiz"){
        mainURL += "frontendquestions/random/";
