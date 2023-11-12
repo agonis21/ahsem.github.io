@@ -297,7 +297,19 @@ body {
     position: absolute;
 }*/
 
+#contactlink {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding: 2px;
+}
 
+#contactlink:hover {
+    color: white;
+    background-color: black;
+    border-bottom: 1px solid white;
+
+}
 
 .footer > h4 {
     text-align: center;
