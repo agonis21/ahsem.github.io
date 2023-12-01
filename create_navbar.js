@@ -3,8 +3,8 @@ navbar.classList.add("c-main-navbar");
 
 let links = [
     ["AHSEM", "index.html"],
-    ["APPS", "apps.html"],
-    ["EDITS", "edits.html"],
+    // ["APPS", "apps.html"],
+    // ["EDITS", "edits.html"],
     ["SHOP", "shop.html"]
 ];
 
