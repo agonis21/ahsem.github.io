@@ -5,7 +5,7 @@ let links = [
     ["AHSEM", "index.html"],
     // ["APPS", "apps.html"],
     ["WORKS", "works.html"],
-    ["SHOP", "shop.html"]
+    ["SHOP", "https://shop.ahsem.nyc"]
 ];
 
 let current_page_link = window.location.href.split("/").slice(-1)[0];
