@@ -1,48 +1,19 @@
-﻿setTimeout(setInterval(function () {
-    var datetime = new Date().toLocaleString().split(",");
-    var timeNow = datetime[1];
-    var dateNow = datetime[0];
+function updateDateTime() {
+    const dateTimeElement = document.getElementById('datetime');
+    const now = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const parts = now.toLocaleDateString('en-US', options).split(' ');
 
-    var timestamp = document.getElementById("timestamp");
-    var timeBengali = convertDateToBangla(timeNow);
-    var dateBengali = convertDateToBangla(dateNow);
-    //console.log(bengali_timestamp);
+    const month = parts[0];
+    const day = parts[1].replace(',', '');
+    const year = parts[2];
 
-    var separator = " - " //" &#169; ";
-    var timeStr = dateBengali + separator + timeBengali;
-
-    if (Math.random() > 0.8) {
-        timeStr = dateNow + separator + timeNow;
-    }
-
-    timestamp.innerHTML = "<a style=\"color:black; text-decoration: none;\" href=\"blank.html\">ahsem.nyc</a> &copy; "
-        + timeStr;
-
-}, 1000), 50000);
-
-
-document.getElementById('intro').addEventListener('ended', myHandler, false);
-function myHandler(e) {
-    var element = document.getElementById("intro");
-    element.parentNode.removeChild(element);
+    const formattedDate = `${year} . ${month} . ${day}`;
+    dateTimeElement.textContent = formattedDate;
 }
 
+// Update the date immediately on page load
+updateDateTime();
 
-
-function convertDateToBangla (english_date) {
-    var character_map = { '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯' };
-
-    var bengali_date = "";
-
-    for (var i = 0; i < english_date.length; i++) {
-        //console.log(english_date[i]);
-        if (english_date[i] in character_map) {
-            bengali_date += character_map[english_date[i]];
-        } else {
-            bengali_date += english_date[i];
-        }
-    }
-
-    return bengali_date;
-
-};
+// Update the date every second
+setInterval(updateDateTime, 1000);

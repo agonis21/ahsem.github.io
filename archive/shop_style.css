@@ -1,0 +1,20 @@
+.row {
+    padding-top: 5px;
+}
+
+#completed_tasks > div {
+    text-decoration: line-through;
+}
+
+#deleted_tasls > div {
+    text-decoration: grammar-error;
+}
+
+.c-main-container > br {
+    background: red;
+}
+
+/*
+button[disabled]:has(:hover) {
+    border: solid 1px black !important;
+}*/

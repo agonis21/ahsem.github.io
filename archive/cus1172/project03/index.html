@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front-end Quiz</title>
+
+    <!-- <meta http-equiv="refresh" content="15"> -->
+
+
+    <link href="https://unpkg.com/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mx-auto">
+
+        <!--NAVIGATION-->
+        <div class="navbar bg-base-200 mb-5 shadow-xl rounded-box">
+            <div class="navbar-start">
+                <a href="https://ahsem.nyc/" class="btn btn-ghost normal-case text-xl">ahsem.nyc</a>
+            </div>
+
+            <div class="navbar-end">
+                <a id="quizName" href="../views/index.html" class="btn btn-ghost normal-case text-xl">CS Quiz</a>
+            </div>
+        </div>
+
+        <div id="introContainer" class="hero mb-5 bg-base-200 shadow-xl rounded-box">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-4xl font-bold">How much do you know about web development?</h1>
+                    <p class="py-6">Take this 9 question quiz to find out! First, tell us your name and the type of quiz you want to take.</p>
+
+                    <div class="card mx-auto mb-5 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span id="userNameLabel" class="label-text">Name</span>
+                                </label>
+                                <input id="userNameInput" type="text" placeholder="Ahsem" class="input input-bordered" required />
+                                
+                            </div>
+
+                            <div class="form-control">
+                                <select id="selectQuiz" class="select select-primary w-full max-w-xs">
+                                    <option selected>Front-end Quiz</option>
+                                    <option>Back-end Quiz</option>
+                                  </select>
+                            </div>
+
+                            <div class="form-control mt-6">
+                                <button id="beginQuizBtn" onclick="return beginQuiz();" class="btn btn-primary">BEGIN QUIZ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+
+
+        
+        <script id="htemplate" type="text/x-handlebars">
+            <!--QUESTION SECTION-->
+            <div class="hero mb-5 bg-base-200 shadow-xl rounded-box">
+                <div class="hero-content max-w-md flex-col text-left">
+                    <h1 class="text-2xl font-bold">#{{currentQuestionsCount}}: {{questionTitle}}</h1>
+                    {{#if isMultipleChoice}}
+                        {{#each multipleChoiceOptions}}
+                            <div class="form-control">
+                                <label class="label cursor-pointer">
+                                    <input type="radio" name="question" class="radio checked:bg-red-500 mr-5" checked />
+                                    <span class="label-text text-xl">{{option}}</span> 
+                                </label>
+                            </div>
+                        {{/each}}
+
+                        
+                    {{/if}}
+
+                    {{#if isMultipleImageChoice}}
+                        {{#each multipleImageChoiceURLOptions}}
+                        
+                            <div class="form-control">
+                                <label class="label cursor-pointer">
+                                    <input type="radio" name="question" class="radio checked:bg-red-500 mr-5" checked />
+                                    <div class="avatar">
+                                        <div class="w-24 rounded">
+                                        <img src="{{option}}" />
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        {{/each}}
+                    {{/if}}
+
+                    {{#if isShortResponse}}
+                        <input id="userGivenShortResponse" type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" />
+
+                    {{/if}}
+
+                </div>
+            </div>
+
+            <!--BOTTOM NAVIGATION-->
+                <div class="navbar bg-base-200 mb-5 shadow-xl rounded-box">
+                    <div class="navbar-start">
+                        <button class="btn">{{name}}</button>
+                    </div>
+
+                    <div class="navbar-center">
+                        <button class="btn">{{currentQuestionsCount}}/{{totalQuestionsCount}}</button>
+                    </div>
+
+                    <div class="navbar-end">
+                        <button onclick="submitQuestion()" class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </div>
+          
+          </script>
+
+          <script id="resultTemplate" type="text/x-handlebars">
+            {{#if isAnswerCorrect}}
+                <div class="alert alert-success">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <span>{{praise}}</span>
+                    <button onclick="nextQuestion()" class="btn">NEXT QUESTION</button>
+                </div>
+            {{else}}
+                <div class="alert alert-error">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <span>{{praise}}</span>
+                    <button onclick="nextQuestion()" class="btn">NEXT QUESTION</button>
+                </div>
+            {{/if}}
+
+          </script>
+          <script id="finalResultTemplate" type="text/x-handlebars">
+            <div class="hero mb-5 bg-base-200 shadow-xl rounded-box">
+                <div class="hero-content text-center">
+                    <div class="max-w-xl">
+                        <h1 class="text-4xl font-bold">{{correctQuestionsCount}} out of {{totalQuestionsCount}}</h1>
+                        <p class="py-6">That's your score! Refresh the page to take the quiz again.</p>
+
+                        <ul class="steps steps-vertical">
+                            {{#each data}}
+                                <li 
+                                    class="step {{#if isResponseCorrect}}step-success{{else}}step-error	{{/if}}"
+                                    data-content="{{#if isResponseCorrect}}✓{{else}}✕{{/if}}"
+                                    >
+                                    {{questionTitle}}
+                                </li>
+                            {{/each}}
+                          </ul>
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+          
+          </script>
+
+          
+          <div id="outputRender"></div>
+          <div id="questionResultRender"></div>
+          <div id="finalResultRender"></div>
+
+
+
+        <!-- <div class="hero mb-5 bg-base-200  shadow-xl rounded-box">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h3 class="text-2xl font-bold">When country surrounds Bangladesh?</h3>
+
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Answer</span>
+                        </label>
+                        <input type="text" placeholder="Type your answer" class="input input-bordered" required />
+                    </div>
+
+                    <button class="btn btn-primary">SUBMIT</button>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+var MCQ_questions = [
+    {
+    
+        questionTitle: "What does HTML stand for?",
+
+        isMultipleChoice: true,
+        isMultipleImageChoice: false,
+        isShortResponse: false,
+
+        multipleChoiceOptions: [
+            {
+                "option": "Hypertext Markup Language"
+            },
+            {
+                "option": "HypoTenuse More Lamb"
+            }
+        ],
+        correctMultipleChoiceOption: "Hypertext Markup Language",
+
+        
+        multipleImageChoiceURLOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }
+        ],
+
+        correctMultipleImageChoiceURLOption: "",
+        correctShortResponseAnswer: ""
+    },
+
+    {
+    
+        questionTitle: "What does CSS stand for?",
+
+        isMultipleChoice: true,
+        isMultipleImageChoice: false,
+        isShortResponse: false,
+
+        multipleChoiceOptions: [
+            {
+                "option": "Hypertext Markup Language"
+            },
+            {
+                "option": "Cascading Style Sheets"
+            }
+        ],
+        correctMultipleChoiceOption: "Cascading Style Sheets",
+
+        
+        multipleImageChoiceURLOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }
+        ],
+
+        correctMultipleImageChoiceURLOption: "",
+        correctShortResponseAnswer: ""
+    }, 
+
+    {
+    
+        questionTitle: "What does JS stand for?",
+
+        isMultipleChoice: true,
+        isMultipleImageChoice: false,
+        isShortResponse: false,
+
+        multipleChoiceOptions: [
+            {
+                "option": "Hypertext Markup Language"
+            },
+            {
+                "option": "HypoTenuse More Lamb"
+            },
+            {
+                "option": "JavaScript"
+            }
+        ],
+        correctMultipleChoiceOption: "JavaScript",
+
+        
+        multipleImageChoiceURLOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }
+        ],
+
+        correctMultipleImageChoiceURLOption: "",
+        correctShortResponseAnswer: ""
+    }
+];
+
+var SR_questions = [
+    {
+    
+        questionTitle: "What is the 3-letter abbreviation of Extensible Markup Language?",
+
+        isMultipleChoice: false,
+        isMultipleImageChoice: false,
+        isShortResponse: true,
+
+        multipleChoiceOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }
+        ],
+        correctMultipleChoiceOption: "",
+
+        
+        multipleImageChoiceURLOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }
+        ],
+
+        correctMultipleImageChoiceURLOption: "",
+        correctShortResponseAnswer: "XML"
+    },
+
+    {
+    
+        questionTitle: "What is the tag for importing stylesheets?",
+
+        isMultipleChoice: false,
+        isMultipleImageChoice: false,
+        isShortResponse: true,
+
+        multipleChoiceOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }
+        ],
+        correctMultipleChoiceOption: "",
+
+        
+        multipleImageChoiceURLOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }, 
+            {
+                "option": ""
+            }
+        ],
+
+        correctMultipleImageChoiceURLOption: "",
+        correctShortResponseAnswer: "<link>"
+    },
+];
+
+var MIC_questions = [
+    {
+    
+        questionTitle: "Which one is the CSS logo?",
+
+        isMultipleChoice: false,
+        isMultipleImageChoice: true,
+        isShortResponse: false,
+
+        multipleChoiceOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }
+        ],
+        correctMultipleChoiceOption: "",
+
+        
+        multipleImageChoiceURLOptions: [
+            {
+                "option": "https://logowik.com/content/uploads/images/123_css3.jpg"
+            },
+            {
+                "option": "https://logowik.com/content/uploads/images/javascript.jpg"
+            }, 
+            {
+                "option": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_neObRKceqsRc3POqgFFfVDrX9jDzDyDXWYYvg71XVT_dNidaPafD_bqKOJYmogSvh0&usqp=CAU"
+            }
+        ],
+
+        correctMultipleImageChoiceURLOption: "https://logowik.com/content/uploads/images/123_css3.jpg",
+        correctShortResponseAnswer: ""
+    }, 
+
+    {
+    
+        questionTitle: "Which one is the HTML logo?",
+
+        isMultipleChoice: false,
+        isMultipleImageChoice: true,
+        isShortResponse: false,
+
+        multipleChoiceOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }
+        ],
+        correctMultipleChoiceOption: "",
+
+        
+        multipleImageChoiceURLOptions: [
+            {
+                "option": "https://logowik.com/content/uploads/images/123_css3.jpg"
+            },
+            {
+                "option": "https://logowik.com/content/uploads/images/javascript.jpg"
+            }, 
+            {
+                "option": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_neObRKceqsRc3POqgFFfVDrX9jDzDyDXWYYvg71XVT_dNidaPafD_bqKOJYmogSvh0&usqp=CAU"
+            }
+        ],
+
+        correctMultipleImageChoiceURLOption: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_neObRKceqsRc3POqgFFfVDrX9jDzDyDXWYYvg71XVT_dNidaPafD_bqKOJYmogSvh0&usqp=CAU",
+        correctShortResponseAnswer: ""
+    },
+
+    {
+    
+        questionTitle: "Which one is the JS logo?",
+
+        isMultipleChoice: false,
+        isMultipleImageChoice: true,
+        isShortResponse: false,
+
+        multipleChoiceOptions: [
+            {
+                "option": ""
+            },
+            {
+                "option": ""
+            }
+        ],
+        correctMultipleChoiceOption: "",
+
+        
+        multipleImageChoiceURLOptions: [
+            {
+                "option": "https://logowik.com/content/uploads/images/123_css3.jpg"
+            },
+            {
+                "option": "https://logowik.com/content/uploads/images/javascript.jpg"
+            }, 
+            {
+                "option": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_neObRKceqsRc3POqgFFfVDrX9jDzDyDXWYYvg71XVT_dNidaPafD_bqKOJYmogSvh0&usqp=CAU"
+            }
+        ],
+
+        correctMultipleImageChoiceURLOption: "https://logowik.com/content/uploads/images/javascript.jpg",
+        correctShortResponseAnswer: ""
+    }
+]
+
+var ALL_questions = [...MCQ_questions, ...SR_questions, ...MIC_questions];
+console.log(ALL_questions.length);
