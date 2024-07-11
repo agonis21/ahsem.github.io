@@ -43,6 +43,20 @@ header > img {
     width: 100%;
 }
 
+
+#bio {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-align: justify;
+}
+
+#bio:nth-child(0) {
+    text-align: center;
+}
+
 .work-headline {
     text-align: center;
     font-family: 'Open Sans', Arial, sans-serif;
