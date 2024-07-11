@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Website</title>
+  <title>AHSEM</title>
   <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="styles.css">
   <!-- <meta http-equiv="refresh" content="15"> -->
 
@@ -15,12 +17,14 @@
 <body>
   <div class="container">
     <div class="container-top">
-      <header>
-        <p>www . AHSEM . nyc</p>
-        <img src="assets/eyes.png" />
-      </header>
+      <a href="https://www.ahsem.nyc">
+        <header>
+          <p>www . AHSEM . nyc</p>
+          <img src="assets/eyes.png" />
+        </header>
+      </a>
       <hr>
-      <div class="side-by-side">
+      <div id="rowofnines" class="side-by-side">
         <div class="section">
           <p>৯</p>
           <p>৯</p>
@@ -38,9 +42,13 @@
         </div>
       </div>
       <hr>
+
     </div>
 
     <div class="container-middle">
+      <div class="work-headline">
+        <!-- <p class="h3">SELECTED WORKS</p> -->
+      </div>
       <div class="accordion accordion-flush" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -51,7 +59,7 @@
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
             <div class="accordion-body">
-              <div class="parent">
+              <div class="nybff-grid">
                 <div class="div1 item">
                   <img src="assets/nybff-2024/Asset 6plain-laurel.png">
                 </div>
@@ -90,18 +98,33 @@
           </div>
         </div>
         
-        <!-- <div class="accordion-item">
+         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                  Accordion Item #2
+                  Bengalis of New York
               </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
               <div class="accordion-body">
-                  Some placeholder content for the second accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+
+                <div class="bony-grid">
+                  <div class="div1 item">
+                    <img src="assets/bony/feb21.png">
+                  </div>
+                  <div class="div2 item">
+                    <img src="assets/bony/muktir-gaan.png">
+                  </div>
+                  <div class="div3 item">
+                    <img src="assets/bony/march26.gif">
+                  </div>
+                </div>
+              </div>
+
               </div>
           </div>
       </div>
+
+<!--
       <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
@@ -152,15 +175,28 @@
       </div>
          -->
       </div>
+
+
+      <div class="container-bottom">
+        <hr>
+        <div>
+          WEBSITE STILL UNDER CONSTRUCTION
+        </div>
+        <div class="email">
+          <a href="mailto:contact@ahsem.nyc">contact@ahsem.nyc</a>
+  
+        </div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/4hsem" target="_blank"><i class="fa fa-instagram"></i> 4hsem</a>
+        </div>
+        <div class="copyright">
+            &copy; 2024
+        </div>
+      </div>
+
     </div>
+    
 
-  </div>
-  <div class="container-bottom">
-    <p></p>
-  </div>
-
-
-  </div>
   <script src="script.js"></script>
 </body>
 
