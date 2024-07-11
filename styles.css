@@ -13,7 +13,7 @@ body, h1, p, .container {
 
 /* Style for the body */
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Anek Bangla', Arial, sans-serif;
     line-height: 1.6;
     padding: 0;
 }
@@ -51,6 +51,9 @@ header > img {
     padding-bottom: 20px;
 
     text-align: justify;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 
 #bio:nth-child(0) {
