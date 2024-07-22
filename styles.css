@@ -154,23 +154,13 @@ header > img {
 .bony-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 2px;
     grid-row-gap: 2px;
 }
 
-    .bony-grid > .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .bony-grid > .div2 { grid-area: 1 / 2 / 2 / 3; }
-    .bony-grid > .div3 { grid-area: 1 / 3 / 2 / 4; }
-    .bony-grid > .div4 { grid-area: 2 / 1 / 3 / 2; }
-    .bony-grid > .div5 { grid-area: 3 / 1 / 4 / 2; }
-    .bony-grid > .div6 { grid-area: 2 / 2 / 4 / 4; }
-    .bony-grid > .div7 { grid-area: 4 / 1 / 5 / 2; }
-    .bony-grid > .div8 { grid-area: 4 / 2 / 5 / 3; }
-    .bony-grid > .div9 { grid-area: 4 / 3 / 5 / 4; }
-    .bony-grid > .div10 { grid-area: 5 / 1 / 6 / 2; }
-    .bony-grid > .div11 { grid-area: 5 / 2 / 6 / 3; }
-    .bony-grid > .div12 { grid-area: 5 / 3 / 6 / 4; }
+    .bony-grid > .div1 { grid-area: 1 / 1 / 2 / 4; }
+    .bony-grid > .div2 { grid-area: 2 / 1 / 3 / 4; }
 
 .side-by-side {
     display: flex;
