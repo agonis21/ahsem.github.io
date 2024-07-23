@@ -120,6 +120,7 @@ header > img {
     .nybff-grid > .div10 { grid-area: 5 / 2 / 7 / 4; }
     .nybff-grid > .div11 { grid-area: 7 / 1 / 8 / 3;}
     .nybff-grid > .div12 { grid-area: 7 / 3 / 8 / 4; }
+    .nybff-grid > .div13 { grid-area: 8 / 1 / 10 / 4;}
 
 .nybff-footer {
     padding: 10px;
