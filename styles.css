@@ -144,7 +144,7 @@ header > img {
     height: 100%;
   }
 
-  .item > img {
+  .item > a > img {
     display: block;
     object-fit: cover;
     width: 100%;
@@ -155,13 +155,24 @@ header > img {
 .bony-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 2px;
     grid-row-gap: 2px;
 }
 
     .bony-grid > .div1 { grid-area: 1 / 1 / 2 / 4; }
     .bony-grid > .div2 { grid-area: 2 / 1 / 3 / 4; }
+    .bony-grid > .div3 { grid-area: 3 / 1 / 4 / 4; }
+
+.bhalo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+
+    .bhalo-grid > .div1 { grid-area: 1 / 1 / 2 / 4; }
 
 .side-by-side {
     display: flex;
